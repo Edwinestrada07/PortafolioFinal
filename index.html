@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <div class="logo__png">
+                        <img src="img/cubeprogramin.png" alt="logoNavbar">
+                    </div>
+                    
+                </div>
+                <!-- Navegación -->
+                <nav class="nav">
+                    <ul class="nav__list flex space-x-4">
+                        <li class="nav__item">
+                            <a href="#about">Sobre Mi</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#experience">Experiencia</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#service">Servicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skill">Habilidades</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#projects">Proyectos</a>
+                        </li>
+                    </ul>
+                    <!--<li class="switch">
+                        <button id="darkModeToggle">Modo Oscuro</button>
+                    </li>-->
+                </nav>
+            </header>
+
+            <main class="main__content">
+                <!-- Sección izquierda fija (Nombre y detalles) -->
+                <div class="sidebar">
+                    <div class="sidebar__title">
+                        <img src="img/logo.png" alt="logoContainer" class="sidebar__img">
+                        <h1>Edwin Estrada</h1>
+                    </div>
+                    <p>Trabajo en crear experiencias digitales que <br> sean intuitivas, visualmente agradables y accesibles.</p>
+                    <h2 id="typing__text">Desarrollo Web Full-Stack, Desarrollador front-end, Diseño gráfico</h2>
+                    <button class="sidebar__button">
+                        <a href="cv/CV-EdwinEstrada.pdf" target="_blank">Descargar CV</a>
+                    </button>
+
+                    <!-- Sección de iconos debajo del botón -->
+                    <div class="social__icons">
+                        <a href="https://github.com/Edwinestrada07" target="_blank" class="icon github">
+                            <img src="img/icons/Github_dark.svg" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/edwinestradam/" target="_blank" class="icon linkedin">
+                            <img src="img/icons/linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="icon twitter">
+                            <img src="img/icons/facebook.svg" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Secciones derecha (About, Experience, Projects) -->
+                <div class="sections">
+                    <!-- About Section -->
+                    <section id="about">
+                        <h2>Sobre Mi</h2>
+                        <div class="about__item">
+                            <p>
+                                Soy un desarrollador creativo, con gran atención a los detalles. Me apasiona diseñar y desarrollar 
+                                sitios web y aplicaciones web que no solo sean atractivos, sino también intuitivos y fáciles de usar. <br>
+                                </br>
+                                Además, tengo habilidades sólidas de comunicación y disfruto colaborar en equipo, tanto con 
+                                colegas como con clientes, para entender sus necesidades y asegurar que se cumplan sus expectativas. <br>
+
+                                En mi portafolio, encontrarás una selección de mis proyectos más recientes, que incluyen desde 
+                                sitios web corporativos hasta aplicaciones personalizadas. También podrás conocer más a fondo mis habilidades y experiencia. <br>
+                                </br>
+                                Si estás buscando un desarrollador web con capacidad para resolver problemas de forma efectiva, 
+                                no dudes en contactarme. Estaré encantado de hablar contigo sobre tus proyectos y cómo puedo ayudarte a hacerlos realidad. ¡Hagamos algo especial juntos!
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Experience Section -->
+                    <section id="experience">
+                        <h2>Experiencia</h2>
+                        <div class="experience__item">
+                            <p><strong>Desarrollador Web</strong></p>
+                            <p>Freelancer | 2022 - Actualmente</p>
+                            <p class="mb-0"><strong>Cargo:</strong> Desarrollador Full-Stack, Desarrollador web.</p>
+                            <p><strong>Funciones:</strong>Creación de sitios web, implementación de soluciones técnicas y diseño visual.</p>
+                        </div>
+                        <div class="experience__item">
+                            <p><strong>Auxiliar Logístico</strong></p>
+                            <p>Industrias Promar S.A. | 2016 - Actualmente</p>
+                            <p class="mb-0"><strong>Cargo:</strong> Auxiliar Logístico.</p>
+                            <p><strong>Funciones:</strong>Coordinación eficiente del despacho de mercancía, garantizando su entrega oportuna y precisa.</p>
+                        </div>
+                        <div class="experience__item">
+                            <p><strong>Diseñador y Fotógrafo</strong></p>
+                            <p>Fotopalacio Estudios | 2013 - 2016</p>
+                            <p class="mb-0"><strong>Cargo:</strong> Auxiliar de Vitrina, Fotógrafo, Diseñador Gráfico y Editor de Fotografía, Impresor de Laboratorio.</p>
+                            <p><strong>Funciones:</strong> Brindar servicio al cliente con atención personalizada y profesional.</p>
+                        </div>
+                        <div class="experience__item">
+                            <p><strong>Auxiliar de Ventas</strong></p>
+                            <p>Makrotechnology | 2012 - 2013</p>
+                            <p class="mb-0"><strong>Cargo:</strong> Administrador y líder de ventas.</p>
+                            <p><strong>Funciones:</strong> Gestión integral de compras y ventas, manejo preciso de caja.</p>
+                        </div>
+                    </section>
+
+                    <!-- Services Section -->
+                    <section id="service">
+                        <h2>Servicios</h2>
+                        <div class="service__item">
+                            <p><strong>Desarrollo Web</strong></p>
+                            <p>
+                                Como desarrollador web, mi pasión es fusionar la estética visual con la funcionalidad digital. Con una sólida 
+                                comprensión de los principios de diseño y una habilidad experta en lenguajes de programación web, me especializo 
+                                en crear experiencias en línea cautivadoras y efectivas.
+                            </p>
+                        </div>
+
+                        <div class="service__item">
+                            <p><strong>Diseño Gráfico</strong></p>
+                            <p>
+                                Mi enfoque meticuloso garantiza que cada proyecto, desde el diseño inicial hasta el desarrollo y la implementación, 
+                                refleje la identidad y los objetivos. Estoy comprometido a ofrecer soluciones creativas y orientadas al usuario que 
+                                superen las expectativas.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Skill Section -->
+                    <section id="skill">
+                        <h2>Habilidades</h2>
+                        <!-- Sección de iconos habilidades -->
+                        <div class="skill__icons">
+                            <a href="" class="icon html5">
+                                <img src="img/iconsSkill/html5.svg" alt="html5">
+                            </a>
+                            <a href="" class="icon css">
+                                <img src="img/iconsSkill/css.svg" alt="css">
+                            </a>
+                            <a href="" class="icon javascript">
+                                <img src="img/iconsSkill/javascript.svg" alt="javascript">
+                            </a>
+                            <a href="" class="icon nodejs">
+                                <img src="img/iconsSkill/nodejs.svg" alt="nodejs">
+                            </a>
+                            <a href="" class="icon expressjs">
+                                <img src="img/iconsSkill/Express.js_dark.svg" alt="expressjs">
+                            </a>
+                            <a href="" class="icon reactjs">
+                                <img src="img/iconsSkill/react.svg" alt="reactjs">
+                            </a>
+                            <a href="" class="icon postgresql">
+                                <img src="img/iconsSkill/postgresql.svg" alt="postgresql">
+                            </a>
+                            <a href="" class="icon github">
+                                <img src="img/iconsSkill/Github_dark.svg" alt="GitHub">
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Projects Section -->
+                    <section id="projects">
+                        <h2>Proyectos</h2>
+                        
+                        <!-- Botones de filtro de proyectos -->
+                        <div class="proyect__button__container">
+                            <div class="proyect__button__gradient" data-filter="*">Todo</div>
+                            <div class="proyect__button__gradient" data-filter=".first">Desarrollo</div>
+                            <div class="proyect__button__gradient" data-filter=".second">Diseño</div>
+                        </div>
+                        
+                        <!-- Cards de proyectos (Dos columnas) -->
+                        <div class="projects__grid">
+                            <div class="card first">
+                                <div class="card__content">
+                                    <img src="img/proyects/proyect1.jpg" alt="Proyecto 1">
+                                    <div class="proyect__icons">
+                                        <img src="img/iconProyect/html5.svg" alt="html5">
+                                        <img src="img/iconProyect/css.svg" alt="css">
+                                        <img src="img/iconProyect/javascript.svg" alt="javascript">
+                                    </div>
+                                    <a href="https://arteactivobysan.netlify.app/" class="card__link" target="_blank">Ver proyecto</a>        
+                                </div>
+                            </div>
+                            
+                            <div class="card first">
+                                <div class="card__content">
+                                    <img src="img/proyects/proyect2.jpg" alt="Proyecto 2">
+                                    <div class="proyect__icons">
+                                        <img src="img/iconProyect/figma.svg" alt="figma">
+                                        <img src="img/iconProyect/vitejs.svg" alt="vite">
+                                        <img src="img/iconProyect/tailwindcss.svg" alt="tailwindcss">
+                                        <img src="img/iconProyect/react.svg" alt="react">
+                                    </div>
+                                    <a href="https://decowoodaxm.netlify.app/" class="card__link" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card second">
+                                <div class="card__content">
+                                    <img src="img/proyects/proyect5.jpg" alt="Proyecto 5">
+                                    <div class="proyect__icons">
+                                        <img src="img/iconProyect/canva.svg" alt="canva">
+                                        <img src="img/iconProyect/photoshop.svg" alt="photoshop">
+                                    </div>
+                                    <a href="" class="card__link" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div>
+
+                            <div class="card first">
+                                <div class="card__content">
+                                    <img src="img/proyects/proyect4.jpg" alt="Proyecto 4">
+                                    <div class="proyect__icons">
+                                        <img src="img/iconProyect/nodejs.svg" alt="nodejs">
+                                        <img src="img/iconProyect/Express.js_dark.svg" alt="expressjs">
+                                        <img src="img/iconProyect/postgresql.svg" alt="postgresql">
+                                        <img src="img/iconProyect/react.svg" alt="react">
+                                        <img src="img/iconProyect/tailwindcss.svg" alt="tailwindcss">
+                                    </div>
+                                    <a href="https://t4sk-master.netlify.app/start" class="card__link" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card first">
+                                <div class="card__content">
+                                    <img src="img/proyects/proyect3.jpg" alt="Proyecto 3">
+                                    <div class="proyect__icons">
+                                        <img src="img/iconProyect/html5.svg" alt="html5">
+                                        <img src="img/iconProyect/css.svg" alt="css">
+                                        <img src="img/iconProyect/javascript.svg" alt="javascript">
+                                    </div>
+                                    <a href="https://biiopaulo.netlify.app/" class="card__link" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card second">
+                                <div class="card__content">
+                                    <img src="img/proyects/proyect6.jpg" alt="Proyecto 6">
+                                    <div class="proyect__icons">
+                                        <img src="img/iconProyect/figma.svg" alt="figma">
+                                        <img src="img/iconProyect/photoshop.svg" alt="photoshop">
+                                        <img src="img/iconProyect/html5.svg" alt="html5">
+                                        <img src="img/iconProyect/css.svg" alt="css">
+                                        <img src="img/iconProyect/javascript.svg" alt="javascript">
+                                    </div>
+                                    <a href="https://casalenarestaurante.netlify.app/" class="card__link" target="_blank">Ver proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Modal para ver el proyecto a pantalla completa -->
+                    <div id="projectModal" class="modal">
+                        <div class="modal__content">
+                            <span class="close">&times;</span>
+                            <img id="modalImage" src="" alt="Proyecto completo">
+                        </div>
+                    </div>  
+                </div>
+            </main>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

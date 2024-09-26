@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&display=swap');
+
+:root {
+  --color-primary: #0f172a;
+  --color-secundary: #092e52;
+  --color-tertiary: #0c4c65;
+  --color-hoover: #20ac97;
+  --color-text-primary: #d3d3d3;
+  --color-text-secundary: #e6e1e154;
+  --fuente-krona: 'Krona One', sans-serif;
+  --fuente-montserrat: 'Montserrat', sans-serif;
+  --fuente-Caveat: 'Caveat';
+  --fuente-AmaticSC: "Amatic SC", "amatic-sc-bold", sans-serif;
+  --fuente-courier: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  cursor: url('img/icons/custom-cursor.svg'), auto;
+}
+body:hover {
+  cursor: url('img/icons/custom-cursor-glow.svg'), auto;
+}
+
+/* General container and layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--fuente-montserrat);
+}
+  
+/* Estilos del contenedor del header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(228, 227, 227, 0.1);
+  background-color: var(--color-secundary);
+}
+
+/* Estilos del logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__png {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Estilos del navbar */
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de los enlaces del navbar */
+.nav__item a {
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: var(--fuente-courier);
+}
+
+.nav__item a:hover {
+  color: var(--color-hoover);
+}
+
+/* Ajustar el margen superior del contenido para evitar que el header lo cubra */
+.sections {
+  margin-top: 80px; /* Ajuste según la altura del header */
+}
+
+/* Main content layout */
+.main__content {
+  display: flex;
+  flex: 1;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Sección fija de la barra lateral izquierda */
+.sidebar {
+  width: 50%;
+  padding: 2.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar__title {
+  display: flex; 
+  align-items: center;
+}
+
+.sidebar__img {
+  width: 50px; 
+  height: 50px; 
+  margin-right: 10px;
+}
+
+.sidebar h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: var(--fuente-Caveat);
+}
+
+.sidebar h2 {
+  font-size: 1.1rem;
+  font-family: var(--fuente-courier);
+  margin: 1rem;
+
+}
+
+.sidebar p {
+  margin: 1rem;
+  color: var(--color-text-secundary);
+}
+
+.sidebar__button {
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secundary);
+  background: linear-gradient(110deg, #000103 45%, #1e2631 55%, #000103);
+  background-size: 200% 100%;
+  border: 1px solid #1f2937; 
+  border-radius: 1rem;
+  transition: color 0.3s ease;
+  outline: none;
+  position: relative;
+}
+
+.sidebar__button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #9ca3af, 0 0 0 4px #f9fafb; /* Focus ring */
+}
+
+@keyframes background-shine {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Animación de brillo de fondo */
+.sidebar__button {
+  animation: background-shine 2s linear infinite;
+}
+
+/*Icons section derecha*/
+.social__icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social__icons .icon img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.social__icons .icon:hover img {
+  transform: scale(1.1);
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Secciones del lado derecho */
+.sections {
+  width: 50%;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.sections section {
+  margin-bottom: 5rem;
+}
+
+.sections h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: var(--fuente-Caveat);
+}
+
+.about__item,
+.experience__item,
+.service__item,
+.skill__item,
+.project__item {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.experience__item strong,
+.service__item strong,
+.skill__item strong,
+.project__item strong {
+  font-weight: 500;
+  color: var(--color-hoover);
+}
+
+/*Icons section skill derecha*/
+.skill__icons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill__icons .icon img {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease;
+}
+
+.skill__icons .icon:hover img {
+  transform: scale(1.1);
+}
+
+/*button proyects*/
+/* Contenedor de los botones */
+.proyect__button__container {
+  display: flex;
+  justify-content: center; /* Alinea los botones en el centro */
+  gap: 20px; /* Espacio entre los botones */
+  margin: 20px 0 30px 0; /* Separación del contenedor respecto al resto del contenido */
+}
+
+/* Estilos de los botones con gradiente */
+.proyect__button__gradient {
+  position: relative;
+  padding: 7px 15px;
+  border-radius: 0.5rem;
+  background: linear-gradient(to bottom, #c7d2fe, #8678f9);
+  color: white;
+  font-size: 1rem;
+  font-family: var(--fuente-courier);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover para agrandar el botón */
+.proyect__button__gradient:hover {
+  transform: scale(1.05);
+}
+
+/* Efecto de enfoque */
+.proyect__button__gradient:focus {
+  outline: none; 
+}
+
+/* Estilos para ocultar y mostrar tarjetas según el filtro */
+.card {
+  display: inline-block;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card.hide {
+  display: none;
+}
+
+
+/* Gradiente de fondo difuminado */
+.proyect__button__gradient::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background: linear-gradient(to bottom, #c7d2fe, #8778f9a6);
+  opacity: 0.55;
+  filter: blur(8px);
+}
+
+/* Estilos generales de las cards */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  position: relative;
+  border-radius: 0.75rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.card__content img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/*Icons card derecha*/
+.proyect__icons {
+  margin: 10px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.proyect__icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.card__link {
+  display: block;
+  margin-top: 7px;
+  color: var(--color-hoover);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Efecto hover */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Modal para mostrar las imágenes a pantalla completa */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal__content img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+  
+ 
