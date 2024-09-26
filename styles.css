@@ -352,7 +352,6 @@ body {
 
   .nav {
     flex-direction: column;
-    gap: 5px;
   }
 
   .main__content {
