@@ -21,7 +21,7 @@ body {
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* General container and layout */
+/* General container */
 .container {
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ body {
   width: 100%;
   padding: 10px 20px;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(228, 227, 227, 0.1);
+  box-shadow: 0 2px 4px rgba(252, 249, 249, 0.199);
   background-color: var(--color-secundary);
 }
 .logo {
@@ -114,9 +114,13 @@ body {
   font-family: var(--fuente-Caveat);
 }
 .sidebar h2 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: var(--fuente-courier);
-  margin: 16px;
+  margin: 1rem;
+  white-space: pre;
+  display: inline-block;
+  min-width: 100%;
+  height: 1.5rem;
 }
 .sidebar p {
   margin: 1rem;
@@ -271,30 +275,30 @@ body {
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 15px;
   margin-top: 30px;
 }
 .card {
   position: relative;
-  border-radius: 0.75rem;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .card__content img {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  border-radius: 1rem;
 }
 /*Icons card derecha*/
 .proyect__icons {
-  margin: 10px 0 5px 0;
+  margin: 20px 0 20px 0;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 .proyect__icons img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 .card__link {
   display: block;
@@ -344,38 +348,95 @@ body {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .header {
     flex-direction: column;
-    text-align: center;
+    padding: 7px;
   }
 
-  .nav {
-    flex-direction: column;
+  .logo__png {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  .nav__list {
+    font-size: 0.85rem;
+    gap: 0px;
+    margin: 5px;
   }
 
   .main__content {
     flex-direction: column;
+    padding: 10px;
   }
 
   .sidebar {
     width: 100%;
+    padding: 1rem;
     text-align: center;
     position: static;
+    height: auto;
+    margin-top: 4.5rem;
+  }
+
+  .sidebar__title img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sidebar h1 {
+    font-size: 2rem;
+  }
+
+  .sidebar h2 {
+    font-size: 1rem;
+  }
+
+  .sidebar__button {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .sections {
+    width: 100%;
+    padding: 1rem;
     margin-top: 0;
   }
 
-  .sidebar__button, .sections {
-    width: 100%;
-    text-align: center;
+  .sections h2 {
+    font-size: 1.8rem;
   }
 
   .projects__grid {
     grid-template-columns: 1fr;
+    padding: 2rem;
   }
 
-  .proyect__button__container {
-    flex-direction: column; 
-    width: 50%;
+  .social__icons {
+    gap: 10px;
+  }
+
+  .social__icons .icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .skill__icons {
+    gap: 10px;
+  }
+
+  .skill__icons .icon img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .proyect__icons {
+    margin-top: 1.2rem;
+  }
+
+  .proyect__icons img {
+    width: 20px;
+    height: 20px;
   }
 }

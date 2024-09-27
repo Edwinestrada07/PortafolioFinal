@@ -16,17 +16,18 @@ const messages = [
     "Desarrollador front-end",
     "Diseño gráfico"
 ];
-    
+
 let messageIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-    
+
 function typeWriter() {
     const currentMessage = messages[messageIndex];
-    const typingSpeed = isDeleting ? 50 : 100;
+    const typingSpeed = isDeleting ? 50 : 100; 
     const displayText = currentMessage.substring(0, charIndex);
-        
-    document.getElementById("typing__text").innerHTML = displayText;
+    
+    // Usamos innerText en lugar de innerHTML para evitar reflujo y movimientos
+    document.getElementById("typing__text").innerText = displayText;
 
     if (!isDeleting && charIndex < currentMessage.length) {
         // Sigue escribiendo
@@ -35,9 +36,9 @@ function typeWriter() {
         // Borra el texto
         charIndex--;
     } else if (!isDeleting && charIndex === currentMessage.length) {
-        // Empieza a borrar después de completar el mensaje
+        // Pausa antes de comenzar a borrar
         isDeleting = true;
-        setTimeout(typeWriter, 1000); // Pausa antes de borrar
+        setTimeout(typeWriter, 1500); // Pausa más larga antes de borrar
         return;
     } else if (isDeleting && charIndex === 0) {
         // Pasa al siguiente mensaje después de borrar
@@ -47,7 +48,7 @@ function typeWriter() {
 
     setTimeout(typeWriter, typingSpeed);
 }
-    
+
 window.onload = typeWriter; // Ejecuta el efecto al cargar la página
 
 
