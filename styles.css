@@ -400,7 +400,9 @@ body {
   }
 
   .nav__list {
-    display: none;
+    font-size: 0.67rem;
+    gap: 0px;
+    margin: 20px 0 20px 0;
   }
 
   .main__content {
@@ -413,18 +415,18 @@ body {
     text-align: center;
     position: static;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
   }
 
   .sidebar__title img {
     width: 50px;
     height: 50px;
-    margin: 16% 2% 8% 10%;
+    margin: 18% 2% 8% 10%;
   }
 
   .sidebar h1 {
     font-size: 2.5rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 
   .sidebar h2 {
@@ -447,7 +449,8 @@ body {
 
   .sections h2 {
     font-size: 1.8rem;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 30px 0;
+    text-align: center;
   }
 
   .timeline {
