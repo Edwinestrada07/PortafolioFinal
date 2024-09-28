@@ -400,8 +400,7 @@ body {
   }
 
   .nav__list {
-    font-size: 0.85rem;
-    gap: 0px;
+    display: none;
   }
 
   .main__content {
@@ -414,13 +413,13 @@ body {
     text-align: center;
     position: static;
     height: auto;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
 
   .sidebar__title img {
     width: 50px;
     height: 50px;
-    margin: 16% 2% 8% 20%;
+    margin: 16% 2% 8% 10%;
   }
 
   .sidebar h1 {
@@ -429,8 +428,7 @@ body {
   }
 
   .sidebar h2 {
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1.3rem;
   }
 
   .sidebar__button {
@@ -440,7 +438,7 @@ body {
 
   .sections {
     width: 100%;
-    padding: 1rem;
+    padding: 2.2rem;
     margin-top: 0;
   }
   .about__item, .service__item {
@@ -449,7 +447,7 @@ body {
 
   .sections h2 {
     font-size: 1.8rem;
-    text-align: center;
+    margin: 0 10px 10px 0;
   }
 
   .timeline {
@@ -471,7 +469,6 @@ body {
 
   .projects__grid {
     grid-template-columns: 1fr;
-    padding: 2rem;
   }
 
   .social__icons {
