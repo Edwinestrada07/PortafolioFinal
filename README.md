@@ -5,11 +5,8 @@ Este es el repositorio de mi portafolio personal. Aquí muestro mis proyectos, h
 ## 🚀 Características
 
 - Interfaz moderna y responsiva.
-- Modo claro y oscuro.
 - Sección de proyectos con filtros dinámicos.
 - Animaciones suaves y efectos interactivos.
-- Modal con videos de ayuda.
-- Personalización del cursor.
 - Sección de habilidades con iconos interactivos.
 
 ## 🛠️ Tecnologías Utilizadas
@@ -26,7 +23,8 @@ Este es el repositorio de mi portafolio personal. Aquí muestro mis proyectos, h
 
 ## 📸 Vista Previa
 
-![Screenshot del portafolio](ruta-de-la-imagen)
+![Interfaz Portafolio](/img/projectsreadme/img1.jpg)
+![Interfaz Portafolio](/img/projectsreadme/img2.jpg)
 
 ## 👤 Autor
 
